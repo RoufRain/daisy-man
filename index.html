@@ -8,6 +8,19 @@
 <!-- setup daisyui and tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        backgroundImage: {
+          'bg-image': "url('./images/yellow-bg.jpg')",
+        }
+      }
+    }
+  }
+</script>
+
 </head>
 
 <body>
@@ -60,10 +73,69 @@
 
 <!-- banner section -->
 
-        <div class="banner-container">
-
-        </div>
+        <section>
+          <div class="hero min-h-[calc(100vh-66px)] bg-bg-image">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn ">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </section>
 
     </header>
+
+    <main>
+      <!-- collection section -->
+      <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10 ">
+
+          <div class="text-center my-5">
+            <h1 class="text-2xl md:text-4xl">Huge Collection</h1>
+            <p class="text-sm">Browse from a various collection</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+            <!-- card 1 -->
+            <div class="card  bg-base-100 shadow-xl image-full">
+              <figure><img src="./images/shoes.avif"></figure>
+              <div class="card-body">
+                <h2 class="card-title">Shoes!</h2>
+                <p>At DaisyMan, we believe that style is a reflection of your unique personality and our mission is to provide you with a diverse and trendy collection.</p>
+                <div class="card-actions justify-end">
+                  <button class="btn ">Buy Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="card  bg-base-100 shadow-xl image-full">
+              <figure><img src="./images/hoodies.avif"></figure>
+              <div class="card-body">
+                <h2 class="card-title">Cloths!</h2>
+                <p>At DaisyMan, we believe that style is a reflection of your unique personality and our mission is to provide you with a diverse and trendy collection.</p>
+                <div class="card-actions justify-end">
+                  <button class="btn ">Buy Now</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3-->
+            <div class="card  bg-base-100 shadow-xl image-full">
+              <figure><img src="./images/perfume.avif"></figure>
+              <div class="card-body">
+                <h2 class="card-title">Perfumes!</h2>
+                <p>At DaisyMan, we believe that style is a reflection of your unique personality and our mission is to provide you with a diverse and trendy collection.</p>
+                <div class="card-actions justify-end">
+                  <button class="btn ">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+    </main>
 </body>
 </html>
